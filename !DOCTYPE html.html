@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Cost Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Meeting Cost Calculator</h1>
+        <form id="costCalculator">
+            <label for="numParticipants">Number of Participants:</label>
+            <input type="number" id="numParticipants" value="1" min="1" required>
+
+            <label for="avgSalary">Average Salary ($/hour):</label>
+            <input type="number" id="avgSalary" value="25" required>
+
+            <label for="meetingDuration">Meeting Duration (minutes):</label>
+            <input type="number" id="meetingDuration" value="30" min="1" required>
+
+            <button type="button" onclick="calculateCost()">Calculate Cost</button>
+        </form>
+
+        <div id="result" class="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
